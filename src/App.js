@@ -1,13 +1,13 @@
 import React, { useReducer, useEffect} from "react";
 
 
-import { Container, Col, Row } from "reactstrap";
+import { Container} from "reactstrap";
 
 // react-router-dom3
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // react toastify stuffs
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // bootstrap css
@@ -79,7 +79,6 @@ const App = () => {
 
   return (
     <Router>
-      {/* FIXME: Provider is not configured */}
       <ContactContext.Provider value={{state,dispatch}}>
         <ToastContainer />
         <Header />
